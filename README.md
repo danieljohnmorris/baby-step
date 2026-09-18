@@ -27,7 +27,7 @@ One count for the whole walk, not one per section. Eleven is the opening message
 
 ASD-STE100 asks for active voice and the present tense, and a model applies that to sentences whose whole point is when something happened. "We fix three defects on the PDF" is correct Simplified Technical English and tells you nothing: fixed on a branch, fixed and merged, or fixed and in front of customers are three different situations, and the one you care about is the third.
 
-So the skill names four states and makes the agent pick one: not started, written, merged, live. Written means the code exists and the tests pass and nobody else has it. "Fixed" on its own is banned, because it is the word that collapses the distinction.
+So the skill names four states and makes the agent pick one: not started, written, merged, live. Written means the code exists and the tests pass and nobody else has it. The tense is what gets ruled out, not any particular word: "fixed" is the right word when it says where the thing is fixed.
 
 This is the failure the skill is most likely to repeat, because the model is not being lazy when it does it. It is following the controlled language it was asked to follow.
 

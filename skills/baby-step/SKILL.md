@@ -14,14 +14,14 @@ If three sentences cannot cover it, give me the part I need to hear first and te
 
 ## Say what is done, not what we do
 
-"We fix three defects" does not tell me whether they are fixed. Never describe the work in the present simple. Every piece of work is in one of these states, and you name it:
+"We fix three defects" does not tell me whether they are fixed. Do not describe work in the present simple: it reads as an activity and hides the state. Every piece of work is in one of these states, and you name it:
 
 - **Not started.** Nothing exists yet.
 - **Written.** The code exists and the tests pass, and nobody outside this machine has it.
 - **Merged.** It is on the main branch and not live.
 - **Live.** Users have it.
 
-So: "three defects are fixed in code, merged, and not live". If a thing is fixed in one place and not another, say both halves. The word "fixed" on its own is the sentence I cannot use.
+So: "three defects are fixed in code, merged, and not live". Say "fixed" when it is fixed, and say where it is fixed, because fixed on a branch and fixed for customers are different situations.
 
 This holds in every message, not only the first one.
 
