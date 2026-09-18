@@ -1,0 +1,5 @@
+interface:
+  display_name: "Baby Step"
+  short_description: "The situation once, then one step at a time"
+policy:
+  allow_implicit_invocation: false
