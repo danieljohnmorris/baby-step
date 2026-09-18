@@ -23,6 +23,14 @@ Every message ends with the same line, so you always know how far in you are:
 
 One count for the whole walk, not one per section. Eleven is the opening message plus three streams plus two decisions plus five steps. Ask a side question and the answer carries the line unchanged, because a digression is not progress.
 
+## "We fix" is not a status
+
+ASD-STE100 asks for active voice and the present tense, and a model applies that to sentences whose whole point is when something happened. "We fix three defects on the PDF" is correct Simplified Technical English and tells you nothing: fixed on a branch, fixed and merged, or fixed and in front of customers are three different situations, and the one you care about is the third.
+
+So the skill names four states and makes the agent pick one: not started, written, merged, live. Written means the code exists and the tests pass and nobody else has it. "Fixed" on its own is banned, because it is the word that collapses the distinction.
+
+This is the failure the skill is most likely to repeat, because the model is not being lazy when it does it. It is following the controlled language it was asked to follow.
+
 ## The explanation gets stepped too
 
 The first version of this had the agent lay out the whole situation in one message and then step through the work. That is the wrong way round. Work you have lost the thread of is work whose shape you cannot hold, so a complete map of it is another wall of text, arriving at the exact moment you said you could not read one. If the situation were small enough to take in one message you would not be typing `/baby-step`.
