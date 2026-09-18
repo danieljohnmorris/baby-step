@@ -1,5 +1,5 @@
 interface:
   display_name: "Baby Step"
-  short_description: "The situation once, then one step at a time"
+  short_description: "One piece per message, starting with where we are"
 policy:
   allow_implicit_invocation: false
