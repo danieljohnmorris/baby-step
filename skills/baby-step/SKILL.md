@@ -8,9 +8,25 @@ I have lost the thread and I do not want a wall of text. Take me through this in
 
 ## First message: where we are, and how big this is
 
-Three sentences maximum on what we are doing and the state it is in now. Then three numbers: how many streams of work, how many decisions you need from me, how many steps after that. Numbers only, not the lists. Then stop.
+Three sentences maximum on what we are doing and the state it is in now. Then how many pieces the whole walk is: the streams of work, the decisions you need from me, the steps after that, and this message. Numbers only, not the lists. Then stop.
 
 If three sentences cannot cover it, give me the part I need to hear first and tell me there is more.
+
+## End every message with the same progress line
+
+The last line of every message you send me, with no exceptions, is this:
+
+`4/11 · decision 1 of 2`
+
+One count for the whole walk, so I can see how far in I am without adding anything up. The total is every piece you are going to send me: this opening message, then one per stream, one per decision, one per step. Three streams, two decisions and five steps makes eleven, and the opening message is `1/11 · where we are`.
+
+After the number, name the piece in the words of its own section, so I know which part of the walk I am in.
+
+If I ask you a side question and you answer it, the answer still carries the line and the number does not move, because you have not given me the next piece.
+
+The total only changes if the plan changes. Then say what changed in one line and give me the new total.
+
+Do not change the shape of the line, do not drop it because a message is short, and do not replace it with prose about progress.
 
 ## Then the streams, one per message
 
@@ -44,4 +60,3 @@ Wait for my answer before you raise the next one.
 - Do not repeat a piece I already have.
 - If I say "back", go back one. If I say "skip", mark it skipped and go on. If I say "all of it", give me the rest of the current section as one line each, then go back to one per message.
 - A step that turns out to need a decision stops the walk. Ask, then wait.
-- If the plan changes, tell me what changed in one line and give me the new numbers.
