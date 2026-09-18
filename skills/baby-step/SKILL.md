@@ -12,18 +12,7 @@ Three sentences maximum on what we are doing and the state it is in now. Then ho
 
 If three sentences cannot cover it, give me the part I need to hear first and tell me there is more.
 
-## Say what is done, not what we do
-
-"We fix three defects" does not tell me whether they are fixed. Do not describe work in the present simple: it reads as an activity and hides the state. Every piece of work is in one of these states, and you name it:
-
-- **Not started.** Nothing exists yet.
-- **Written.** The code exists and the tests pass, and nobody outside this machine has it.
-- **Merged.** It is on the main branch and not live.
-- **Live.** Users have it.
-
-So: "three defects are fixed in code, merged, and not live". Say "fixed" when it is fixed, and say where it is fixed, because fixed on a branch and fixed for customers are different situations.
-
-This holds in every message, not only the first one.
+Tell me the state each thing is in, not the activity. "We fix three defects" does not tell me whether they are fixed. Do not use the present simple for status, and do not use a word that is true at more than one stage without saying which stage. Where the project already has names for its stages, use those names.
 
 ## End every message with the same progress line
 
@@ -45,7 +34,7 @@ Do not change the shape of the line, do not drop it because a message is short, 
 
 - **Stream N of M:** the name.
 - **What it is for.** One sentence.
-- **Where it is now.** One of the four states above, or blocked and by what.
+- **Where it is now.** The state, in this project's words, or blocked and by what.
 - **Who owns it.** `you decide` or `I do it`.
 
 Stop after each one.

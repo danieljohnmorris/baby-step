@@ -25,9 +25,9 @@ One count for the whole walk, not one per section. Eleven is the opening message
 
 ## "We fix" is not a status
 
-ASD-STE100 asks for active voice and the present tense, and a model applies that to sentences whose whole point is when something happened. "We fix three defects on the PDF" is correct Simplified Technical English and tells you nothing: fixed on a branch, fixed and merged, or fixed and in front of customers are three different situations, and the one you care about is the third.
+ASD-STE100 asks for active voice and the present tense, and a model applies that to sentences whose whole point is when something happened. "We fix three defects on the PDF" is correct Simplified Technical English and tells you nothing. Fixed on a branch and fixed in front of customers are different situations, and the sentence covers both.
 
-So the skill names four states and makes the agent pick one: not started, written, merged, live. Written means the code exists and the tests pass and nobody else has it. The tense is what gets ruled out, not any particular word: "fixed" is the right word when it says where the thing is fixed.
+So the skill rules out the present simple for status and asks for the stage by name, in whatever words the project already uses for its stages. It does not supply a list of stages. A release pipeline, a house move and a clinic rollout have different ones, and a skill that ships one project's vocabulary makes the agent translate into words nobody here says, which is the thing the skill is trying to stop.
 
 This is the failure the skill is most likely to repeat, because the model is not being lazy when it does it. It is following the controlled language it was asked to follow.
 
