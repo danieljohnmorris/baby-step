@@ -1,38 +1,47 @@
 ---
 name: baby-step
-description: "Stop. Baby-step me through this: the whole situation once, then one step at a time."
+description: "Stop. Baby-step me through this, one piece per message, starting with where we are."
 disable-model-invocation: true
 ---
 
-I have lost the thread and I do not want another wall of text. Show me the situation once, then take me through it one step at a time. Write in ASD-STE100 Simplified Technical English, and use the words this project already uses rather than terms you have introduced.
+I have lost the thread and I do not want a wall of text. Take me through this in small pieces, one per message, and wait for me after each one. That includes explaining the situation: do not dump it on me in one go. Write in ASD-STE100 Simplified Technical English, and use the words this project already uses rather than terms you have introduced.
 
-## The first message is the map
+## First message: where we are, and how big this is
 
-One message, nothing started. Four parts, in this order:
+Three sentences maximum on what we are doing and the state it is in now. Then three numbers: how many streams of work, how many decisions you need from me, how many steps after that. Numbers only, not the lists. Then stop.
 
-1. **Where we are.** Three sentences maximum. What we are trying to do, and the state it is in now.
-2. **The streams.** A numbered list, one line each. Mark every stream `you decide` or `I do it`.
-3. **Your decisions.** Only the streams marked `you decide`. Give me the options, what each one costs, and which one you recommend. If there are none, say that in one line.
-4. **The count.** How many steps come after this message. A number, not a list of them.
+If three sentences cannot cover it, give me the part I need to hear first and tell me there is more.
 
-Then stop. Do not begin step 1 in the same message.
+## Then the streams, one per message
 
-## After that, one step per message
+- **Stream N of M:** the name.
+- **What it is for.** One sentence.
+- **Where it is now.** Not started, in progress, blocked, or done.
+- **Who owns it.** `you decide` or `I do it`.
 
-Each message is one step, in four lines:
+Stop after each one.
+
+## Then the decisions, one per message
+
+- **Decision N of M:** the question, in one sentence.
+- **The options.** What each one costs me.
+- **What you recommend,** and why.
+- **What happens if we leave it,** if we can.
+
+Wait for my answer before you raise the next one.
+
+## Then the steps, one per message
 
 - **Step N of M:** the name of the step.
 - **What it does.** One sentence.
-- **Who does it.** Me or you. If it is me, give me the exact command to run or the exact thing to click.
+- **Who does it.** Me or you. If it is me, the exact command to run or the exact thing to click.
 - **How we know it worked.** The thing I will see when it is done.
-
-Then stop and wait for me.
 
 ## Rules while you wait
 
-- One step per message. Do not bundle two steps because both are small.
-- Do not do step N+1 before I answer.
-- Do not repeat the map. I have it.
-- A step that needs a decision stops the walk. Ask the question, then wait.
-- If I say "back", go back one step. If I say "skip", mark that step skipped and go on.
-- If the plan changes, tell me what changed in one line, then give me a new map.
+- One piece per message. Do not bundle two because both are small.
+- Do not run ahead of my answer.
+- Do not repeat a piece I already have.
+- If I say "back", go back one. If I say "skip", mark it skipped and go on. If I say "all of it", give me the rest of the current section as one line each, then go back to one per message.
+- A step that turns out to need a decision stops the walk. Ask, then wait.
+- If the plan changes, tell me what changed in one line and give me the new numbers.

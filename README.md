@@ -1,27 +1,29 @@
 # baby-step
 
-You type `/baby-step` when the agent is ten moves ahead of you. It stops, shows you the whole situation in one message, and then walks you through it one step at a time, waiting after each one.
+You type `/baby-step` when the agent is ten moves ahead of you. It stops and takes you through the work one piece per message, waiting after each one.
 
 It is a companion to [`wait-what`](https://github.com/danieljohnmorris/wait-what). That skill repairs one message you did not follow. This one repairs a whole piece of work you have lost track of.
 
 ## What it does
 
-The first message is a map, and nothing is started:
+Four sections, in order, one message at a time:
 
-- **Where we are.** Three sentences on what we are doing and the state it is in.
-- **The streams.** A numbered list, each one marked `you decide` or `I do it`.
-- **Your decisions.** The options, what each costs, and a recommendation.
-- **The count.** How many steps come after this. A number, not the list of them.
+1. **Where we are.** Three sentences on the work and the state it is in, then three numbers: how many streams, how many decisions you owe, how many steps after that.
+2. **The streams,** one per message: what it is for, where it is now, and whether you decide it or the agent does it.
+3. **The decisions,** one per message: the question, the options and their cost, a recommendation, and what happens if you leave it.
+4. **The steps,** one per message: what it does, who does it, and what you will see when it worked.
 
-Then it stops. After that, one message per step: the step name, what it does, who does it, and what you will see when it worked. Then it waits.
+Say "back" to go back one, "skip" to pass over one, or "all of it" to get the rest of the current section as a list and drop the pacing.
 
-You can say "back" to go back one step, or "skip" to pass over one.
+## The explanation gets stepped too
 
-## Why the map comes first, and separately
+The first version of this had the agent lay out the whole situation in one message and then step through the work. That is the wrong way round. Work you have lost the thread of is work whose shape you cannot hold, so a complete map of it is another wall of text, arriving at the exact moment you said you could not read one. If the situation were small enough to take in one message you would not be typing `/baby-step`.
 
-An agent that starts step 1 in the same message as the plan has given you no chance to object to the plan. The decisions are the part you actually need to answer, and they get buried when they arrive wrapped in work already in progress. So the map is a message on its own, the decisions are pulled out of the streams rather than left inside them, and the step count is a number so you know how long this is before you agree to it.
+So the situation is paced on the same terms as the steps. What you get up front is short: three sentences and three numbers. The numbers matter more than they look. They tell you how long this is and how much of it is your decision before you agree to any of it, and they are cheap to read in a way a list of nine streams is not.
 
-Holding to one step per message is the part models resist. Two adjacent small steps look like one step to a model optimising for a helpful answer, and once it bundles two it will bundle five. The rules section exists for that: one step, do not run ahead, do not repeat the map.
+Decisions get their own messages for the same reason. A decision buried in a description of a stream gets skimmed past, and a decision that arrives alongside work already in progress is not really being asked.
+
+Holding to one piece per message is the part models resist. Two adjacent small items look like one item to a model optimising for a helpful answer, and once it bundles two it will bundle five. Hence "all of it": the pacing needs an exit you control, or you will start fighting the skill instead of using it.
 
 ## Why ASD-STE100
 
